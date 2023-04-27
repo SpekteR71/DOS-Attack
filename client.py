@@ -9,7 +9,7 @@ def connect_to_server(port):
     # Connect to the server
     
     try:
-        client_socket.connect(('10.30.202.117', port))  # Replace with the server's IP address
+        client_socket.connect(('IP_address', port))  # Replace with the server's IP address
         print(f'[+] Connected to server on port {port}')
     except ConnectionRefusedError:
         print(f'[-] Failed to connect to server on port {port}')
