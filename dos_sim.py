@@ -48,7 +48,7 @@ def main():
         print("1. Start attack    2. Exit")
         n = int(input())
         if n == 1:
-            pkt = create_packet("10.30.202.117", 12345)   
+            pkt = create_packet("target_ip", 12345)   
             attack(pkt)
             print("Packets sent")
         elif n == 2: 
